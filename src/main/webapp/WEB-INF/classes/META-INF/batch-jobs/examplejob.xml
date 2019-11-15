@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id="webserverlog" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+    <step id="mobilefilter">
+        <chunk checkpoint-policy="item" item-count="10">
+            <reader ref="exampleReader"></reader>
+            <processor ref="exampleProcessor"></processor>
+            <writer ref="exampleWriter"></writer>
+        </chunk>
+        <end on="COMPLETED"/>
+    </step>
+</job>
